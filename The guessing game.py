@@ -3,8 +3,8 @@ import random
 high_number = 30
 answer = random.randint(1, high_number)
 times_run = 0
-guess = int(input('I am thinking of a number between 1-30.'
-                  'What is your guess:'))
+guess = int(input('I am thinking of a number between 1-{}.'
+                  'What is your guess:'.format(high_number)))
 
 while times_run < 4:
     if guess != answer:
